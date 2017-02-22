@@ -8,6 +8,8 @@ WIP of a food blog
 | Classic Chilli |Todo|Bulk|
 | Classic Bolognese |Todo|Bulk|
 | Peanut Chicken |Todo|Bulk|
+| Jambalaya |Todo|Bulk|
+| Fish Pie | Todo | Bulk|
 | BBB | Todo | Special |
 | Pizza | Todo | Special |
 
