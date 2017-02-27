@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include header.html %}
+</head>
+<body>
+
+<ul class="post-list">
+    {% for post in site.recipes %}
+    <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+    </li>
+    {% endfor %}
+</ul>
+
+
+<div class="container">
+    {{ content }}
+</div>
+
+{% include footer.html %}
+</body>
+</html>
