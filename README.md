@@ -5,6 +5,7 @@ WIP of a food blog
 | Meal | Status | Type |
 |------|--------|------|
 | Chicken Lasagna| In Progress |Bulk|
+| Bacon, egg, avocado and feta stack | In Progress |Breakfast|
 | Classic Chilli |Todo|Bulk|
 | Classic Bolognese |Todo|Bulk|
 | Peanut Chicken |Todo|Bulk|
