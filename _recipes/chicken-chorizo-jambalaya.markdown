@@ -1,13 +1,13 @@
 ---
 layout: recipe
-title:  "Chicken, Butternut Squash and Pesto Lasagna"
+title:  "Chicken, Chorizo Jambalaya"
 subtitle: "Pretty ddecent"
-date:   2017-02-21 21:57:38 +0000
+date:   2017-01-21 21:57:38 +0000
 comments: true
 time: "45 mins"
 portions: "4"
 rough_cost: "£10"
-image_location: https://images.unsplash.com/photo-1426869981800-95ebf51ce900?auto=compress,format&fit=crop&w=350&h=350
+image_location: https://images.unsplash.com/photo-1474600056930-615c3d706456?auto=compress,format&fit=crop&w=350&h=350
 description: "Better than chicken nuggets and chips"
 playlist: https://open.spotify.com/user/jaybeattie92/playlist/0fl9tBdvQbObUre4IG8cXy
 source: "bbcgoodfood.com"

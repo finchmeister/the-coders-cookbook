@@ -1,6 +1,0 @@
----
-layout: default
----
-
-
-Hi Bob

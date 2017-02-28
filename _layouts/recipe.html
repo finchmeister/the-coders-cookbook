@@ -26,23 +26,16 @@
                 <li>Portions: {{ page.portions }}</li>
                 <li>Rough Cost: {{ page.rough_cost }}</li>
                 <li>Spotify: {{ page.playlist }}</li>
+                <li>Source: {{ page.source }}</li>
+                <li>By: {{ page.author }}</li>
             </ul>
-
-
-
 
         </div>
         <div class="col-sm-5">
             <img src="{{ page.image_location }}">
         </div>
 
-
     </div>
-
-
-
-
-
 
     <div class="row recipe-main">
         <div class="col-sm-4 ingredients">
@@ -68,19 +61,10 @@
             {{ content }}
 
 
-            {% include disqus.html %}
+            <!--{% include disqus.html %}-->
         </div>
     </div>
-
-
-
-
-
-
-
 </div>
-
-
 {% include footer.html %}
 </body>
 </html>

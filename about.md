@@ -1,9 +1,17 @@
 ---
-layout: post
+layout: default
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# Why?
 
+- Main motivation
+    - Real cooking, not Jamie Oliver food processing and £30 dinners
+- Cooking all the time is long
 
+# Technical Side
+
+- Jekyll... etc.
+- Content over tech
+- View the source (even create your own PR)

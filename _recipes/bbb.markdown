@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title:  "Chicken, Butternut Squash and Pesto Lasagna"
+title:  "BBB (Bacon, Barbeque Boxmaster)"
 subtitle: "Pretty ddecent"
 date:   2017-02-21 21:57:38 +0000
 comments: true

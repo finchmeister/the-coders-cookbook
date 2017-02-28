@@ -1,5 +1,22 @@
 
-// $body-bg: #38be0b;
+// Colours
+$mabel: rgb(229, 245, 255);
+$aquamarine: rgb(129, 255, 197);
+$royal-blue: rgb(83, 54, 232);
+
+
+
+$brand-primary: $royal-blue;
+
+$body-bg: $mabel;
+
+// Footer
+$footer-background: $royal-blue;
+$footer-height: 200px;
+$footer-link-colour: white;
+
+
 // $body-color: #fff;
 
 @import "bootstrap/variables";
+

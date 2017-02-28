@@ -7,12 +7,10 @@ comments: true
 time: "45 mins"
 portions: "4"
 rough_cost: "£10"
-image_location: https://images.unsplash.com/photo-1426869981800-95ebf51ce900?auto=compress,format&fit=crop&w=350&h=350
+image_location: http://placehold.it/350x350
 description: "Better than chicken nuggets and chips"
 playlist: https://open.spotify.com/user/jaybeattie92/playlist/0fl9tBdvQbObUre4IG8cXy
 source: "bbcgoodfood.com"
-author: "thefinchmeister"
-tags: "chicken  "
 
 ingredients:
     - title: ""
