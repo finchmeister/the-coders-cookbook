@@ -32,7 +32,7 @@
 
         </div>
         <div class="col-sm-5">
-            <img src="{{ page.image_location }}">
+            <img class="img-fluid" src="{{ site.url }}/{{ page.image_location }}">
         </div>
 
     </div>
@@ -47,7 +47,7 @@
             <ul>
                 {% for ingredient in item.ingredients %}
 
-                <li> {{ ingredient.qty }} {{ ingredient.name }}</li>
+                <li>{% if ingredient.qty %}{{ ingredient.qty }} {% endif %}{{ ingredient.name }}</li>
 
                 {% endfor %}
             </ul>
