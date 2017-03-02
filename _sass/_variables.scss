@@ -3,20 +3,41 @@
 $mabel: rgb(229, 245, 255);
 $aquamarine: rgb(129, 255, 197);
 $royal-blue: rgb(83, 54, 232);
-
+$creme-brulee: rgb(255, 233, 165);
+$jaffa: rgb(243, 150, 73);
+$violet-red: #f13795;
+$rope: #8c501f;
 
 
 $brand-primary: $royal-blue;
 
-//$body-bg: $mabel;
+$body-bg: $creme-brulee;
 
 // Footer
-$footer-background: $royal-blue;
+$footer-background: $violet-red;
 $footer-height: 200px;
 $footer-link-colour: white;
+
+$container-max-widths: (
+        sm: 480px,
+        md: 560px,
+        lg: 680px,
+        xl: 815px
+);
 
 
 // $body-color: #fff;
 
-@import "bootstrap/variables";
+$jumbotron-bg: $aquamarine;
 
+$headings-font-family: 'Lobster', cursive;
+$headings-color: $jaffa;
+
+$font-family-base: 'Raleway', sans-serif;
+$body-color: $rope;
+
+//$font-family-sans-serif: 'Lobster', cursive;
+
+@import "bootstrap/variables";
+// font-family: 'Lobster', cursive;
+// font-family: 'Raleway', sans-serif;
