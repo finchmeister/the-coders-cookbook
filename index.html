@@ -3,9 +3,9 @@ layout: home
 title: Food With The Finchmeister
 ---
 
-<div class="jumbotron text-center">
+<div class="jumbotron main text-center">
     <h1>Food With The Finchmeister</h1>
-    <p class="lead">Eat the foods</p>
+    <!--<p class="lead">Eat the foods</p>-->
 </div>
 
 <div class="container">
@@ -18,7 +18,7 @@ title: Food With The Finchmeister
 
         <div class="col-sm-4">
             <div>
-                <img class="img-fluid" src="{{ recipe.image_location }}" alt="{{ recipe.title }}">
+                <img class="img-fluid img-thumbnail" src="{{ recipe.image_location }}" alt="{{ recipe.title }}">
                 <p class="card-text"><a href="{{ recipe.url }}">{{ recipe.title }}</a></p>
 
             </div>

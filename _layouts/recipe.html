@@ -6,7 +6,7 @@
 <body>
     {% include nav.html %}
 
-<div class="container">
+<div class="container recipe">
     <div class="row recipe-header">
         <div class="col-sm-7">
             <h1>{{ page.title }}
@@ -21,7 +21,7 @@
                 {{ page.description }}
             </p>
             {% endif %}
-            <ul>
+            <ul class="list-unstyled">
                 <li>Time: {{ page.time }}</li>
                 <li>Portions: {{ page.portions }}</li>
                 <li>Rough Cost: {{ page.rough_cost }}</li>
@@ -32,7 +32,7 @@
 
         </div>
         <div class="col-sm-5">
-            <img class="img-fluid" src="{{ site.url }}/{{ page.image_location }}">
+            <img class="img-fluid image-shadow" src="{{ site.url }}/{{ page.image_location }}">
         </div>
 
     </div>
@@ -44,7 +44,7 @@
                 {% if item.title %}
                     <h3>{{ item.title }}</h3>
                 {% endif %}
-            <ul>
+            <ul class="list-unstyled">
                 {% for ingredient in item.ingredients %}
 
                 <li>{% if ingredient.qty %}{{ ingredient.qty }} {% endif %}{{ ingredient.name }}</li>

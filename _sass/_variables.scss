@@ -15,7 +15,7 @@ $body-bg: $creme-brulee;
 
 // Footer
 $footer-background: $violet-red;
-$footer-height: 200px;
+$footer-height: 80px;
 $footer-link-colour: white;
 
 $container-max-widths: (
@@ -25,10 +25,12 @@ $container-max-widths: (
         xl: 815px
 );
 
-
 // $body-color: #fff;
 
 $jumbotron-bg: $aquamarine;
+
+$jumbotron-padding: 8em;
+$jumbotron-bg-image: "https://images.unsplash.com/photo-1485962307416-993e145b0d0d?auto=format&fit=crop&w=1199&h=500&cs=tinysrgb&crop=";
 
 $headings-font-family: 'Lobster', cursive;
 $headings-color: $jaffa;
