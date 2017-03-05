@@ -8,13 +8,19 @@ $jaffa: rgb(243, 150, 73);
 $violet-red: #f13795;
 $rope: #8c501f;
 
+// Bright colours
+$sunglow: #ffc437;
+$purple-heart: #692eab;
+$carribean-green: #00dca1;
+$pomegranate: #F13737;
+$royal-blue: #3779f1;
 
-$brand-primary: $royal-blue;
+$brand-primary: $carribean-green;
 
-$body-bg: $creme-brulee;
+$body-bg: $sunglow;
 
 // Footer
-$footer-background: $violet-red;
+$footer-background: $royal-blue;
 $footer-height: 80px;
 $footer-link-colour: white;
 
@@ -32,14 +38,16 @@ $jumbotron-bg: $aquamarine;
 $jumbotron-padding: 8em;
 $jumbotron-bg-image: "https://images.unsplash.com/photo-1485962307416-993e145b0d0d?auto=format&fit=crop&w=1199&h=500&cs=tinysrgb&crop=";
 
-$headings-font-family: 'Lobster', cursive;
-$headings-color: $jaffa;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato');
 
-$font-family-base: 'Raleway', sans-serif;
-$body-color: $rope;
 
-//$font-family-sans-serif: 'Lobster', cursive;
+$headings-font-family: 'Josefin Sans', sans-serif;
+
+//$headings-color: $jaffa;
+
+$font-family-base: 'Lato', sans-serif;
+$body-color: white;
+
+// TODO move to fonts file
 
 @import "bootstrap/variables";
-// font-family: 'Lobster', cursive;
-// font-family: 'Raleway', sans-serif;

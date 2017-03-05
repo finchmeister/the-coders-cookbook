@@ -4,49 +4,75 @@ title: Food With The Finchmeister
 ---
 
 <div class="jumbotron main text-center">
-    <h1>Food With The Finchmeister</h1>
+    <h1>{{ site.title }}</h1>
     <!--<p class="lead">Eat the foods</p>-->
 </div>
 
-<div class="container">
+<section id="intro" class="bg-sunglow text-center">
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, vis ne ponderum cotidieque. Augue dicta admodum cu nam, solum volumus lobortis ius ei. Ea est unum probo utroque, eu consequat neglegentur theophrastus duo, erant docendi blandit his cu.</p>
+
+    </div>
+
+</section>
 
 
-    <h2>Latest Recipes</h2>
+<section id="latest-recipes" class="bg-pomegranate">
 
-    <div class="row">
-        {% for recipe in site.recipes limit:3 %}
+    <div class="container">
+        <h2>Latest Recipes</h2>
 
-        <div class="col-sm-4">
-            <div>
-                <img class="img-fluid img-thumbnail" src="{{ recipe.image_location }}" alt="{{ recipe.title }}">
-                <p class="card-text"><a href="{{ recipe.url }}">{{ recipe.title }}</a></p>
+        <div class="row">
+            {% for recipe in site.recipes limit:3 %}
 
+            <div class="col-sm-4">
+                <div>
+                    <img class="img-fluid img-thumbnail" src="{{ recipe.image_location }}" alt="{{ recipe.title }}">
+                    <p class="card-text"><a href="{{ recipe.url }}">{{ recipe.title }}</a></p>
+
+                </div>
             </div>
+
+            {% endfor %}
+
         </div>
-
-        {% endfor %}
-
     </div>
 
 
 
 
-    <h2>Weekday Cooking</h2>
-    <p>When you want dinner and lunch...</p>
-    <!--Bulk cooking-->
 
-    <h2>Going Special</h2>
-    <p>Lorem ipsum dolor sit amet, vis ne ponderum cotidieque. Augue dicta admodum cu nam, solum volumus lobortis ius ei. Ea est unum probo utroque, eu consequat neglegentur theophrastus duo, erant docendi blandit his cu.</p>
+</section>
 
-    <h2>Breakfast</h2>
-    <p>Lorem ipsum dolor sit amet, vis ne ponderum cotidieque. Augue dicta admodum cu nam, solum volumus lobortis ius ei. Ea est unum probo utroque, eu consequat neglegentur theophrastus duo, erant docendi blandit his cu.</p>
 
-    <h2>Vegetarian</h2>
-    <p>Lorem ipsum dolor sit amet, vis ne ponderum cotidieque. Augue dicta admodum cu nam, solum volumus lobortis ius ei. Ea est unum probo utroque, eu consequat neglegentur theophrastus duo, erant docendi blandit his cu.</p>
 
-    <h2>Fellow chefs</h2>
-    <p>Lorem ipsum dolor sit amet, vis ne ponderum cotidieque. Augue dicta admodum cu nam, solum volumus lobortis ius ei. Ea est unum probo utroque, eu consequat neglegentur theophrastus duo, erant docendi blandit his cu.</p>
-    <!--Loop through chefs-->
+<section class="bg-purple-heart">
+    <div class="container">
 
-</div>
+        <h2>Weekday Cooking</h2>
+        <p>When you want dinner and lunch...</p>
+        <!--Bulk cooking-->
+
+        <h2>Going Special</h2>
+        <p>Lorem ipsum dolor sit amet, vis ne ponderum cotidieque. Augue dicta admodum cu nam, solum volumus lobortis ius ei. Ea est unum probo utroque, eu consequat neglegentur theophrastus duo, erant docendi blandit his cu.</p>
+
+        <h2>Breakfast</h2>
+        <p>Lorem ipsum dolor sit amet, vis ne ponderum cotidieque. Augue dicta admodum cu nam, solum volumus lobortis ius ei. Ea est unum probo utroque, eu consequat neglegentur theophrastus duo, erant docendi blandit his cu.</p>
+
+        <h2>Vegetarian</h2>
+        <p>Lorem ipsum dolor sit amet, vis ne ponderum cotidieque. Augue dicta admodum cu nam, solum volumus lobortis ius ei. Ea est unum probo utroque, eu consequat neglegentur theophrastus duo, erant docendi blandit his cu.</p>
+
+        <h2>Fellow chefs</h2>
+        <p>Lorem ipsum dolor sit amet, vis ne ponderum cotidieque. Augue dicta admodum cu nam, solum volumus lobortis ius ei. Ea est unum probo utroque, eu consequat neglegentur theophrastus duo, erant docendi blandit his cu.</p>
+        <!--Loop through chefs-->
+
+    </div>
+
+
+</section>
+
+
+
+
 

@@ -4,6 +4,7 @@
   &.main {
     background: url($jumbotron-bg-image) no-repeat center center;
     background-size: cover;
+    margin-bottom: 2rem;
   }
 
   h1 {
@@ -12,4 +13,24 @@
 
     color: white;
   }
+}
+
+section {
+  padding: 3em 0 3em 0;
+}
+
+.bg-sunglow {
+  background-color: $sunglow;
+}
+.bg-purple-heart {
+  background-color: $purple-heart;
+}
+.bg-carribean-green {
+  background-color: $carribean-green;
+}
+.bg-pomegranate {
+  background-color: $pomegranate;
+}
+.bg-royal-blue {
+  background-color: $royal-blue;
 }
