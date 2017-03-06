@@ -11,7 +11,7 @@ title: Food With The Finchmeister
 <section id="intro" class="bg-sunglow text-center">
 
     <div class="container">
-        <p>Lorem ipsum dolor sit amet, vis ne ponderum cotidieque. Augue dicta admodum cu nam, solum volumus lobortis ius ei. Ea est unum probo utroque, eu consequat neglegentur theophrastus duo, erant docendi blandit his cu.</p>
+        <p class="lead">Cooking and coding? Basically the same thing. Follow some instructions and turn input into output...</p>
 
     </div>
 
@@ -24,12 +24,13 @@ title: Food With The Finchmeister
         <h2>Latest Recipes</h2>
 
         <div class="row">
+            <!--TODO a card slider would be nice here-->
             {% for recipe in site.recipes limit:3 %}
 
             <div class="col-sm-4">
                 <div>
-                    <img class="img-fluid img-thumbnail" src="{{ recipe.image_location }}" alt="{{ recipe.title }}">
-                    <p class="card-text"><a href="{{ recipe.url }}">{{ recipe.title }}</a></p>
+                    <a href="{{ recipe.url }}"><img class="img-fluid img-thumbnail" src="{{ recipe.image_location }}" alt="{{ recipe.title }}">
+                    <p class="card-text">{{ recipe.title }}</p></a>
 
                 </div>
             </div>

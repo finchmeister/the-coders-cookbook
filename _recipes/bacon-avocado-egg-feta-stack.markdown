@@ -9,7 +9,7 @@ portions: "1"
 rough_cost: "£10"
 image_location: assets/food-images/bacon-avocado-feta-stack.jpg
 description: "The hardest part about this is coordinating the serving so that your bacon, eggs and toasted bread all finish hot at roughly the same time."
-playlist: https://open.spotify.com/user/jaybeattie92/playlist/0fl9tBdvQbObUre4IG8cXy
+spotify_uri: spotify:user:jaybeattie92:playlist:4CeMdHu1yU1w8932JmTPI4
 source: "bbcgoodfood.com"
 author: "thefinchmeister"
 tags: "chicken  "

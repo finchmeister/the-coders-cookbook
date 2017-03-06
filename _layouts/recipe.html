@@ -6,64 +6,122 @@
 <body>
     {% include nav.html %}
 
-<div class="container recipe">
-    <div class="row recipe-header">
-        <div class="col-sm-7">
-            <h1>{{ page.title }}
-            </h1>
-            {% if page.subtitle %}
-            <h2>
-                <small class="text-muted">{{ page.subtitle }}</small>
-            </h2>
-            {% endif %}
-            {% if page.description %}
-            <p class="lead">
-                {{ page.description }}
-            </p>
-            {% endif %}
-            <ul class="list-unstyled">
-                <li>Time: {{ page.time }}</li>
-                <li>Portions: {{ page.portions }}</li>
-                <li>Rough Cost: {{ page.rough_cost }}</li>
-                <li>Spotify: {{ page.playlist }}</li>
-                <li>Source: {{ page.source }}</li>
-                <li>By: {{ page.author }}</li>
-            </ul>
+<div class="recipe">
+    <div class="container">
+        <div class="row recipe-header">
 
-        </div>
-        <div class="col-sm-5">
-            <img class="img-fluid image-shadow" src="{{ site.url }}/{{ page.image_location }}">
-        </div>
-
-    </div>
-
-    <div class="row recipe-main">
-        <div class="col-sm-4 ingredients">
-            <h2>Ingredients</h2>
-            {% for item in page.ingredients %}
-                {% if item.title %}
-                    <h3>{{ item.title }}</h3>
+            <div class="col-sm-7">
+                <h1>{{ page.title }}
+                </h1>
+                {% if page.subtitle %}
+                <h2>
+                    <small class="text-muted">{{ page.subtitle }}</small>
+                </h2>
                 {% endif %}
-            <ul class="list-unstyled">
-                {% for ingredient in item.ingredients %}
-
-                <li>{% if ingredient.qty %}{{ ingredient.qty }} {% endif %}{{ ingredient.name }}</li>
-
-                {% endfor %}
-            </ul>
-
-            {% endfor %}
-
-        </div>
-
-        <div class="col-sm-8 method">
-            <h2>Method</h2>
-            {{ content }}
+                {% if page.description %}
+                <p class="lead">
+                    {{ page.description }}
+                </p>
+                {% endif %}
 
 
-            <!--{% include disqus.html %}-->
+                <ul class="list-unstyled">
+                    <li>Source: {{ page.source }}</li>
+                    <li>By: {{ page.author }}</li>
+                </ul>
+                <!--Sharelinks TODO test-->
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}"><i class="fa fa-2x fa-facebook-official facebook-blue" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/home?status=Check%20this%20shit%20hot%20recipe%20out%20from%20The%20Coder's%20Cookbook!%20{{ page.url }}"><i class="fa fa-2x fa-twitter twitter-blue" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url }}"><i class="fa fa-2x fa-envelope email-grey" aria-hidden="true"></i></a></li>
+                </ul>
+
+
+            </div>
+            <div class="col-sm-5">
+                <img class="img-fluid image-shadow" src="{{ site.url }}/{{ page.image_location }}">
+            </div>
+
         </div>
     </div>
+
+    <div class="bg-pomegranate middle-bar">
+        <div class="container">
+            <div class="row h4">
+
+                <div class="col-sm-4 text-sm-center text-md-left">
+                    &#9200; Time: {{ page.time }}
+                </div>
+                <div class="col-sm-4 text-sm-center">
+                    &#128106; Portions: {{ page.portions }}
+                </div>
+                <div class="col-sm-4 text-sm-center text-md-right">
+                    &#128176; Rough Cost: {{ page.rough_cost }}
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="recipe-main">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4 ingredients">
+                    <h2>Ingredients</h2>
+                    {% for item in page.ingredients %}
+                    {% if item.title %}
+                    <h3>{{ item.title }}</h3>
+                    {% endif %}
+                    <ul class="list-unstyled">
+                        {% for ingredient in item.ingredients %}
+
+                        <li>{% if ingredient.qty %}{{ ingredient.qty }} {% endif %}{{ ingredient.name }}</li>
+
+                        {% endfor %}
+                    </ul>
+
+                    {% endfor %}
+
+                </div>
+
+                <div class="col-sm-8 method">
+                    <h2>Method</h2>
+                    {{ content }}
+
+
+                    <!--{% include disqus.html %}-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                DISQUS
+            </div>
+            <div class="col-sm-5">
+
+                {% if page.spotify_uri %}
+                <h3>Recommended Listening</h3>
+
+                <iframe src="https://embed.spotify.com/?uri={{ page.spotify_uri }}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                {% endif %}
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 {% include footer.html %}
 </body>
