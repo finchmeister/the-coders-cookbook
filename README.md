@@ -1,5 +1,10 @@
-# Food with the finchmeister
-WIP of a food blog
+# The Coder's Cookbook
+## TODO:
+[] Add tagging functionality
+[] Create landing pages
+[] Do 'get involved'
+[] Do about
+[] Implement author pics
 ## Recipies
 
 | Meal | Status | Type |

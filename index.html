@@ -25,13 +25,17 @@ title: Food With The Finchmeister
 
         <div class="row">
             <!--TODO a card slider would be nice here-->
+
+
             {% for recipe in site.recipes limit:3 %}
 
             <div class="col-sm-4">
-                <div>
-                    <a href="{{ recipe.url | prepend: site.github.url }}"><img class="img-fluid img-thumbnail" src="{{ recipe.image_location }}" alt="{{ recipe.title }}">
-                    <p class="card-text">{{ recipe.title }}</p></a>
-
+                <div class="text-center">
+                    <div class="image-overlay-container">
+                        <a href="{{ recipe.url | prepend: site.github.url }}"><img class="img-fluid image-overlay" src="{{ recipe.image_location }}" alt="{{ recipe.title }}"></a>
+                    </div>
+                    <p class="card-text">{{ recipe.title }}</p>
+                   <!-- <div class="overlay"></div>-->
                 </div>
             </div>
 

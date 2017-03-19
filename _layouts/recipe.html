@@ -24,16 +24,24 @@
                 </p>
                 {% endif %}
 
+                <img src="http://placehold.it/75x75" alt="" class="rounded-circle"> By: {{ page.author }}
+
+                {% for tag in page.tags %}
+
+                <span class="badge badge-default">{{ tag }}</span>
+
+                {% endfor %}
 
                 <ul class="list-unstyled">
                     <li>Source: {{ page.source }}</li>
-                    <li>By: {{ page.author }}</li>
                 </ul>
+
+                <hr>
                 <!--Sharelinks TODO test-->
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}"><i class="fa fa-2x fa-facebook-official facebook-blue" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="https://twitter.com/home?status=Check%20this%20shit%20hot%20recipe%20out%20from%20The%20Coder's%20Cookbook!%20{{ page.url }}"><i class="fa fa-2x fa-twitter twitter-blue" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url }}"><i class="fa fa-2x fa-envelope email-grey" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"><i class="fa fa-2x fa-facebook-official facebook-blue" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/home?status=Check%20this%20shit%20hot%20recipe%20out%20from%20The%20Coder's%20Cookbook!%20{{ page.url | absolute_url }}"><i class="fa fa-2x fa-twitter twitter-blue" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url }}"><i class="fa fa-2x fa-envelope email-grey" aria-hidden="true"></i></a></li>
                 </ul>
 
 
@@ -50,13 +58,13 @@
             <div class="row h4">
 
                 <div class="col-sm-4 text-sm-center text-md-left">
-                    &#9200; Time: {{ page.time }}
+                    <!--&#9200; -->Time: {{ page.time }}
                 </div>
                 <div class="col-sm-4 text-sm-center">
-                    &#128106; Portions: {{ page.portions }}
+                    <!--&#128106; -->Portions: {{ page.portions }}
                 </div>
                 <div class="col-sm-4 text-sm-center text-md-right">
-                    &#128176; Rough Cost: {{ page.rough_cost }}
+                    <!--&#128176; -->Rough Cost: {{ page.rough_cost }}
                 </div>
 
             </div>
@@ -73,7 +81,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-sm-4 ingredients">
+                <div class="col-xl-4 col-md-4 ingredients">
                     <h2>Ingredients</h2>
                     {% for item in page.ingredients %}
                     {% if item.title %}
@@ -91,13 +99,21 @@
 
                 </div>
 
-                <div class="col-sm-8 method">
+                <div class="col-xl-5 col-md-8 method">
                     <h2>Method</h2>
                     {{ content }}
 
-
-                    <!--{% include disqus.html %}-->
                 </div>
+
+                <div class="col-xl-3 spotify">
+                    {% if page.spotify_uri %}
+                    <h3>Recommended Listening</h3>
+
+                    <iframe src="https://embed.spotify.com/?uri={{ page.spotify_uri }}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                    {% endif %}
+                </div>
+
+
             </div>
         </div>
 
@@ -106,18 +122,9 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-md-8 offset-md-2">
                 {% include disqus.html %}
             </div>
-            <div class="col-sm-5">
-
-                {% if page.spotify_uri %}
-                <h3>Recommended Listening</h3>
-
-                <iframe src="https://embed.spotify.com/?uri={{ page.spotify_uri }}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-                {% endif %}
-            </div>
-
         </div>
 
     </div>
