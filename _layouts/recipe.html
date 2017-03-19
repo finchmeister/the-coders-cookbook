@@ -24,13 +24,16 @@
                 </p>
                 {% endif %}
 
-                <img src="http://placehold.it/75x75" alt="" class="rounded-circle"> By: {{ page.author }}
+                <div class="author">
+                    <img src="http://placehold.it/75x75" alt="" class="rounded-circle"> By: {{ page.author }}
+                </div>
+                <div class="tags">
+                    Tags:
+                    {% for tag in page.tags %}
+                    <span class="badge badge-default">{{ tag }}</span>
+                    {% endfor %}
+                </div>
 
-                {% for tag in page.tags %}
-
-                <span class="badge badge-default">{{ tag }}</span>
-
-                {% endfor %}
 
                 <ul class="list-unstyled">
                     <li>Source: {{ page.source }}</li>
@@ -41,7 +44,7 @@
                 <ul class="list-inline">
                     <li class="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"><i class="fa fa-2x fa-facebook-official facebook-blue" aria-hidden="true"></i></a></li>
                     <li class="list-inline-item"><a href="https://twitter.com/home?status=Check%20this%20shit%20hot%20recipe%20out%20from%20The%20Coder's%20Cookbook!%20{{ page.url | absolute_url }}"><i class="fa fa-2x fa-twitter twitter-blue" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url }}"><i class="fa fa-2x fa-envelope email-grey" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url }}"><i class="fa fa-2x fa-envelope email-icon" aria-hidden="true"></i></a></li>
                 </ul>
 
 
@@ -108,6 +111,9 @@
                 <div class="col-xl-3 spotify">
                     {% if page.spotify_uri %}
                     <h3>Recommended Listening</h3>
+                    {% if page.spotify_comment %}
+                    <p>{{ page.spotify_comment }}</p>
+                    {% endif %}
 
                     <iframe src="https://embed.spotify.com/?uri={{ page.spotify_uri }}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
                     {% endif %}
@@ -120,14 +126,17 @@
     </div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                {% include disqus.html %}
+    <div class="comments">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Comments</h2>
+                    {% include disqus.html %}
+                </div>
             </div>
         </div>
-
     </div>
+
 
 </div>
 {% include footer.html %}
