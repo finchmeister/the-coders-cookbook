@@ -8,6 +8,8 @@ $jaffa: rgb(243, 150, 73);
 $violet-red: #f13795;
 $rope: #8c501f;
 
+$grey-faint: rgba(195, 195, 195, 0.51);
+
 // Bright colours
 $sunglow: #53b4ca;
 $purple-heart: #7b45b7;
@@ -17,6 +19,15 @@ $royal-blue: #3779f1;
 $teal: teal;
 
 $brand-primary: $carribean-green;
+
+$brand-1: $sunglow;
+$brand-2: $purple-heart;
+$brand-3: $pomegranate;
+$brand-4: $sunglow;
+$brand-5: $royal-blue;
+$brand-6: $teal;
+
+$text-muted: $grey-faint !default;
 
 $body-bg: $sunglow;
 

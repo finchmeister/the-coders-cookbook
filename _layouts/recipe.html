@@ -7,56 +7,58 @@
     {% include nav.html %}
 
 <div class="recipe">
-    <div class="container">
-        <div class="row recipe-header">
+    <div class="recipe-header bg-brand-5">
+        <div class="container">
+            <div class="row">
 
-            <div class="col-sm-7">
-                <h1>{{ page.title }}
-                </h1>
-                {% if page.subtitle %}
-                <h2>
-                    <small class="text-muted">{{ page.subtitle }}</small>
-                </h2>
-                {% endif %}
-                {% if page.description %}
-                <p class="lead">
-                    {{ page.description }}
-                </p>
-                {% endif %}
+                <div class="col-sm-7">
+                    <h1>{{ page.title }}
+                    </h1>
+                    {% if page.subtitle %}
+                    <h2>
+                        <small class="text-muted">{{ page.subtitle }}</small>
+                    </h2>
+                    {% endif %}
+                    {% if page.description %}
+                    <p class="lead">
+                        {{ page.description }}
+                    </p>
+                    {% endif %}
 
-                <div class="author">
-                    <img src="http://placehold.it/75x75" alt="" class="rounded-circle"> By: {{ page.author }}
+                    <div class="author">
+                        <img src="http://placehold.it/75x75" alt="" class="rounded-circle"> By: {{ page.author }}
+                    </div>
+                    <div class="tags">
+                        Tags:
+                        {% for tag in page.tags %}
+                        <span class="badge badge-default">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+
+
+                    <ul class="list-unstyled">
+                        <li>Source: {{ page.source }}</li>
+                    </ul>
+
+                    <hr>
+                    <!--Sharelinks TODO test-->
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"><i class="fa fa-2x fa-facebook-official facebook-blue" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/home?status=Check%20this%20shit%20hot%20recipe%20out%20from%20The%20Coder's%20Cookbook!%20{{ page.url | absolute_url }}"><i class="fa fa-2x fa-twitter twitter-blue" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url }}"><i class="fa fa-2x fa-envelope email-icon" aria-hidden="true"></i></a></li>
+                    </ul>
+
+
                 </div>
-                <div class="tags">
-                    Tags:
-                    {% for tag in page.tags %}
-                    <span class="badge badge-default">{{ tag }}</span>
-                    {% endfor %}
+                <div class="col-sm-5">
+                    <img class="img-fluid image-shadow" src="{{ site.url }}/{{ page.image_location }}">
                 </div>
-
-
-                <ul class="list-unstyled">
-                    <li>Source: {{ page.source }}</li>
-                </ul>
-
-                <hr>
-                <!--Sharelinks TODO test-->
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"><i class="fa fa-2x fa-facebook-official facebook-blue" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="https://twitter.com/home?status=Check%20this%20shit%20hot%20recipe%20out%20from%20The%20Coder's%20Cookbook!%20{{ page.url | absolute_url }}"><i class="fa fa-2x fa-twitter twitter-blue" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url }}"><i class="fa fa-2x fa-envelope email-icon" aria-hidden="true"></i></a></li>
-                </ul>
-
 
             </div>
-            <div class="col-sm-5">
-                <img class="img-fluid image-shadow" src="{{ site.url }}/{{ page.image_location }}">
-            </div>
-
         </div>
     </div>
 
-    <div class="bg-pomegranate middle-bar">
+    <div class="bg-brand-3 middle-bar">
         <div class="container">
             <div class="row h4">
 
@@ -79,7 +81,7 @@
 
     </div>
 
-    <div class="recipe-main">
+    <div class="recipe-main bg-brand-2">
 
         <div class="container">
             <div class="row">
@@ -100,7 +102,11 @@
 
                     {% endfor %}
 
+                    <hr class="hidden-md-up">
+
                 </div>
+
+
 
                 <div class="col-xl-5 col-md-8 method">
                     <h2>Method</h2>
@@ -109,6 +115,7 @@
                 </div>
 
                 <div class="col-xl-3 spotify">
+                    <hr class="hidden-xl-up">
                     {% if page.spotify_uri %}
                     <h3>Recommended Listening</h3>
                     {% if page.spotify_comment %}
@@ -126,7 +133,7 @@
     </div>
 
 
-    <div class="comments">
+    <div class="comments bg-brand-6">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
