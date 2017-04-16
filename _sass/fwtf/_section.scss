@@ -1,0 +1,12 @@
+
+@include media-breakpoint-up(md) {
+  .section {
+    padding: 3rem 0 3rem 0;
+  }
+}
+
+$gradient-bar-bg-1: linear-gradient(141deg, #FFB302 0%, #ed8100 51%, #e05a00 75%);
+
+.gradient-bar-1 {
+  background: $gradient-bar-bg-1;
+}

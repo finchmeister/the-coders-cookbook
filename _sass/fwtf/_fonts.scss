@@ -1,0 +1,18 @@
+.lead-big {
+  font-size: 1.25rem;
+}
+
+@include media-breakpoint-up(md) {
+  .lead-big {
+    font-size: 1.75rem;
+  }
+}
+
+.text-white-muted {
+  color: rgba(255, 255, 255, 0.65) !important
+}
+
+.section-heading {
+  size: 2.5rem;
+  font-style: italic;
+}

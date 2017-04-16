@@ -17,8 +17,10 @@ $carribean-green: #00dca1;
 $pomegranate: crimson;
 $royal-blue: #3779f1;
 $teal: teal;
+$selective-yellow: #FFB302;
+$island-spice: #fffaed;
 
-$brand-primary: $carribean-green;
+$brand-primary: $selective-yellow;
 
 $brand-1: $sunglow;
 $brand-2: $purple-heart;
@@ -50,16 +52,20 @@ $jumbotron-bg: $aquamarine;
 $jumbotron-padding: 8em;
 $jumbotron-bg-image: "https://images.unsplash.com/photo-1485962307416-993e145b0d0d?auto=format&fit=crop&w=1199&h=500&cs=tinysrgb&crop=";
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato');
 
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 $headings-font-family: 'Josefin Sans', sans-serif;
+$font-family-base: $headings-font-family;
 
-//$headings-color: $jaffa;
+$lead-font-size: 1.75rem;
 
-$font-family-base: 'Lato', sans-serif;
-$body-color: white;
+$body-color: #464a4c;
 
 // TODO move to fonts file
+
+// Prototype
+$body-bg: $island-spice;
+
+
 
 @import "bootstrap/variables";
