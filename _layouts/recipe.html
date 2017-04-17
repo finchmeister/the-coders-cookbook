@@ -7,60 +7,78 @@
     {% include nav.html %}
 
 <div class="recipe">
-    <div class="recipe-header bg-brand-5">
-        <div class="container">
-            <div class="row">
+    <div class="container py-4 py-md-5">
+        <div class="row">
 
-                <div class="col-sm-7">
-                    <h1>{{ page.title }}
-                    </h1>
-                    {% if page.subtitle %}
-                    <h2>
-                        <small class="text-muted">{{ page.subtitle }}</small>
-                    </h2>
-                    {% endif %}
-                    {% if page.description %}
-                    <p class="lead">
-                        {{ page.description }}
-                    </p>
-                    {% endif %}
+            <div class="col-md-7">
+                <h1>{{ page.title }}
+                </h1>
+                {% if page.subtitle %}
+                <h2>
+                    <small class="text-muted">{{ page.subtitle }}</small>
+                </h2>
+                {% endif %}
+                {% if page.description %}
+                <p class="lead mb-1">
+                    {{ page.description }}
+                </p>
+                {% endif %}
 
-                    <div class="author">
-                        <img src="http://placehold.it/75x75" alt="" class="rounded-circle"> By: {{ page.author }}
+                <div class="row">
+                    <div class="col-md-9 col-sm-6 col-lg-6 py-3">
+
+
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <img src="http://lorempixel.com/175/175/" class="rounded-circle img-fluid">
+                            </div>
+                            <div class="col-8 col-md-6">
+
+                                <div class="d-flex align-items-center contributor-desc">
+                                    <div>
+                                        by thefinchmeister
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="tags">
-                        Tags:
-                        {% for tag in page.tags %}
-                        <span class="badge badge-default">{{ tag }}</span>
-                        {% endfor %}
+                    <div class="col-lg-6 py-3">
+
+                        <div class="d-flex align-items-center contributor-desc">
+                            <div>
+                                Tags:
+                                {% for tag in page.tags %}
+                                <span class="badge badge-default">{{ tag }}</span>
+                                {% endfor %}
+                                <div class="py-1"></div>
+                                Inspiration: {{ page.source }}
+                            </div>
+                        </div>
+
                     </div>
-
-
-                    <ul class="list-unstyled">
-                        <li>Source: {{ page.source }}</li>
-                    </ul>
-
-                    <hr>
-                    <!--Sharelinks TODO test-->
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"><i class="fa fa-2x fa-facebook-official facebook-blue" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a href="https://twitter.com/home?status=Check%20this%20shit%20hot%20recipe%20out%20from%20The%20Coder's%20Cookbook!%20{{ page.url | absolute_url }}"><i class="fa fa-2x fa-twitter twitter-blue" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url }}"><i class="fa fa-2x fa-envelope email-icon" aria-hidden="true"></i></a></li>
-                    </ul>
-
-
                 </div>
-                <div class="col-sm-5">
-                    <img class="img-fluid image-shadow" src="{{ site.url }}/{{ page.image_location }}">
-                </div>
+
+                <!--Sharelinks TODO test-->
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"><i class="fa fa-2x fa-facebook-official facebook-blue" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/home?status=Check%20this%20shit%20hot%20recipe%20out%20from%20The%20Coder's%20Cookbook!%20{{ page.url | absolute_url }}"><i class="fa fa-2x fa-twitter twitter-blue" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url }}"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a></li>
+                </ul>
+
 
             </div>
+            <div class="col-md-5">
+                <img class="img-fluid image-shadow" src="{{ site.url }}/{{ page.image_location }}">
+            </div>
+
         </div>
     </div>
 
-    <div class="bg-brand-3 middle-bar">
+    <div class="gradient-bar-1 text-white py-5">
         <div class="container">
-            <div class="row h4">
+            <div class="row h4 mb-0">
 
                 <div class="col-sm-4 text-sm-center text-md-left">
                     <!--&#9200; -->Time: {{ page.time }}
@@ -81,7 +99,7 @@
 
     </div>
 
-    <div class="recipe-main bg-brand-2">
+    <div class="py-5">
 
         <div class="container">
             <div class="row">
@@ -133,7 +151,7 @@
     </div>
 
 
-    <div class="comments bg-brand-6">
+    <div class="comments">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
