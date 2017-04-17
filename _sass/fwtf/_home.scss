@@ -4,7 +4,6 @@
   &.main {
     background: url($jumbotron-bg-image) no-repeat center center;
     background-size: cover;
-    margin-bottom: 2rem;
   }
 
   h1 {
@@ -15,24 +14,6 @@
   }
 }
 
-
-
-
-.bg-sunglow {
-  background-color: $sunglow;
-}
-.bg-purple-heart {
-  background-color: $purple-heart;
-}
-.bg-carribean-green {
-  background-color: $carribean-green;
-}
-.bg-pomegranate {
-  background-color: $pomegranate;
-}
-.bg-royal-blue {
-  background-color: $royal-blue;
-}
 
 .bg-brand-1 {
   background-color: $brand-1;
@@ -53,3 +34,6 @@
   background-color: $brand-6;
 }
 
+.contributor-desc {
+  height: 100%;
+}
