@@ -7,7 +7,7 @@ comments: true
 time: "15 mins"
 portions: "1"
 rough_cost: "£10"
-image_location: assets/food-images/bacon-avocado-feta-stack.jpeg
+image_location: /assets/food-images/bacon-avocado-feta-stack.jpeg
 description: "The hardest part about this is coordinating the serving so that your bacon, eggs and toasted bread all finish hot at roughly the same time."
 spotify_uri: spotify:user:jaybeattie92:playlist:4CeMdHu1yU1w8932JmTPI4
 spotify_comment: "Listen to smooth jazz"
