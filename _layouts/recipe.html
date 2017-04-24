@@ -70,7 +70,7 @@
 
             </div>
             <div class="col-md-5">
-                <img class="img-fluid image-shadow" src="{{ site.url }}/{{ page.image_location }}">
+                <img class="img-fluid image-shadow" src="../{{ page.image_location | prepend: site.github.url }}">
             </div>
 
         </div>

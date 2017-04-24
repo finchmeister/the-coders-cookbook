@@ -14,14 +14,11 @@ title: The Coder's Cookbook
             <div class="offset-md-3 col-md-6">
 
                 <p class="lead-big py-3">
-                    The open source cookbook
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec commodo luctus dolor id placerat. Proin non hendrerit nulla.
-                    Morbi luctus lobortis sem a accumsan.
-                    Cras id neque pretium, tempus tortor non, finibus sem.
+                    Delicious, practical and open source.
                 </p>
-
+                <p class="lead-big py-3">
+                    This is <span class="font-italic">The Coder's Cookbook</span>.
+                </p>
             </div>
         </div>
     </div>
@@ -32,14 +29,15 @@ title: The Coder's Cookbook
     <div class="container">
         <div class="row">
             <div class="col-sm-12 py-4">
-                <h2 class="text-white section-heading text-center">Recipes Just in</h2>
+                <h2 class="text-white section-heading text-center">Latest Recipes</h2>
                 <div class="main-slider">
 
-                    {% for recipe in site.recipes limit:9 %}
+                    {% assign recipes = site.recipes | reverse %}
+                    {% for recipe in recipes limit:9 %}
 
                     <div class="img-slider">
                         <a href="{{ recipe.url | prepend: site.github.url }}">
-                            <img class="img-fluid" src="{{ recipe.image_location }}" alt="{{ recipe.title }}">
+                            <img class="img-fluid" src="{{ recipe.image_location | prepend: site.github.url }}" alt="{{ recipe.title }}">
                         </a>
                         <p class="img-slider-caption text-white">
                             <!--TODO hyperlink-->
@@ -65,9 +63,7 @@ title: The Coder's Cookbook
             <div class="offset-md-2 col-md-8 py-3">
                 <h3>Weekday</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec commodo luctus dolor id placerat. Proin non hendrerit nulla.
-                    Morbi luctus lobortis sem a accumsan.
+                    Epic everyday bulk cooking - designed to provide lunch and dinner for days.
                 </p>
                 <p class="text-center text-md-left pt-3">
                     <a class="btn btn-warning" href="#" role="button">Go to Weekday</a>
@@ -76,6 +72,27 @@ title: The Coder's Cookbook
             </div>
 
         </div>
+        <div class="row">
+            <div class="offset-md-2 col-md-8 py-3">
+                <h3>Food Mood</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec commodo luctus dolor id placerat. Proin non hendrerit nulla.
+                    Morbi luctus lobortis sem a accumsan.
+                </p>
+                <p class="text-center text-md-left pt-3">
+                    <a class="btn btn-warning" href="#" role="button">Chicken</a>
+                    <a class="btn btn-warning" href="#" role="button">Beef</a>
+                    <a class="btn btn-warning" href="#" role="button">Pork</a>
+                    <a class="btn btn-warning" href="#" role="button">Lamb</a>
+                    <a class="btn btn-warning" href="#" role="button">Fish</a>
+                    <a class="btn btn-warning" href="#" role="button">Vege</a>
+                </p>
+                <hr class="mt-5">
+            </div>
+        </div>
+
+
         <div class="row">
             <div class="offset-md-2 col-md-8 py-3">
                 <h3>Vegetarian</h3>
@@ -129,7 +146,7 @@ title: The Coder's Cookbook
 
         <div class="row">
             <div class="offset-md-2 col-sm-3 text-center">
-                <img src="http://lorempixel.com/175/175/" class="rounded-circle img-fluid p-3">
+                <img src="http://lorempixel.com/100/100/" class="rounded-circle img-fluid p-3">
             </div>
             <div class="col-sm-9 col-md-6">
 
@@ -145,7 +162,7 @@ title: The Coder's Cookbook
 
         <div class="row">
             <div class="offset-md-2 col-sm-3 text-center">
-                <img src="http://lorempixel.com/175/175/" class="rounded-circle img-fluid p-3">
+                <img src="http://lorempixel.com/100/100/" class="rounded-circle img-fluid p-3">
             </div>
             <div class="col-sm-9 col-md-6">
 
