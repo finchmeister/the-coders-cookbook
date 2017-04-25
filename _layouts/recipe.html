@@ -54,6 +54,9 @@
                                 {% endfor %}
                                 <div class="py-1"></div>
                                 Inspiration: {{ page.source }}
+                                <div class="py-1"></div>
+                                <a href="https://github.com/finchmeister/the-coders-cookbook/edit/master/{{ page.path }}"><i
+                                        class="fa fa-pencil"></i> &nbsp;Improve this recipe</a>
                             </div>
                         </div>
 
@@ -61,12 +64,12 @@
                 </div>
 
                 <!--Sharelinks TODO test-->
+
                 <ul class="list-inline">
                     <li class="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"><i class="fa fa-2x fa-facebook-official facebook-blue" aria-hidden="true"></i></a></li>
                     <li class="list-inline-item"><a href="https://twitter.com/home?status=Check%20this%20shit%20hot%20recipe%20out%20from%20The%20Coder's%20Cookbook!%20{{ page.url | absolute_url }}"><i class="fa fa-2x fa-twitter twitter-blue" aria-hidden="true"></i></a></li>
                     <li class="list-inline-item"><a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url }}"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a></li>
                 </ul>
-
 
             </div>
             <div class="col-md-5">
@@ -104,7 +107,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-xl-4 col-md-4 ingredients">
+                <div class="col-xl-3 col-md-4 ingredients">
                     <h2>Ingredients</h2>
                     {% for item in page.ingredients %}
                     {% if item.title %}
@@ -126,7 +129,7 @@
 
 
 
-                <div class="col-xl-5 col-md-8 method">
+                <div class="col-xl-6 col-md-8 method">
                     <h2>Method</h2>
                     {{ content }}
 
