@@ -1,10 +1,13 @@
 # The Coder's Cookbook
 ## TODO:
-[] Add tagging functionality
-[] Create landing pages
-[] Do 'get involved'
-[] Do about
-[] Implement author pics
+- Add grid for food moods
+- Add food mood landing pages
+- Implement author lists
+  - Hook up sections
+- Do 'get involved'
+- Do about
+- Section
+
 ## Recipies
 
 | Meal | Status | Type |
