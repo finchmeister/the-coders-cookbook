@@ -20,14 +20,15 @@ tags: fish bulk
 ingredients:
     - title: ""
       ingredients:
-        - name: "Spuds"
+        - name: "Maris Piper or King Edward Potatoes"
           qty: "1kg"
-        - name: "Eggs (fresh, large and free range)"
-          qty: "2"
-        - name: "Avocado"
-          qty: "1"
-        - name: "Ciabata (or some form of nice bread) sliced"
-          qty: "1"
-        - name: "Lemon juice"
-        - name: "Chilli Flakes"
+        - name: "Knob of butter"
+          qty: ""
 ---
+
+1. Create the mash topping. Peel and halve the potatoes to a consistent size. Boil them for 20-25 minutes until tender.
+Meanwhile, preheat the oven to 200c.
+
+2. Create the sauce.
+
+3.
