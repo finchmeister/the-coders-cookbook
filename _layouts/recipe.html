@@ -52,8 +52,10 @@
                                 {% for tag in page.tags %}
                                 <span class="badge badge-default">{{ tag }}</span>
                                 {% endfor %}
+                                {% if page.source %}
                                 <div class="py-1"></div>
                                 Inspiration: {{ page.source }}
+                                {% endif %}
                                 <div class="py-1"></div>
                                 <a href="https://github.com/finchmeister/the-coders-cookbook/edit/master/{{ page.path }}"><i
                                         class="fa fa-pencil"></i> &nbsp;Improve this recipe</a>

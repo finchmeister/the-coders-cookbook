@@ -34,16 +34,18 @@ ingredients:
           qty: "3 tbsp"
         - name: "Apple Juice"
           qty: "500ml"
-        - name: "Tomato Puree"
+        - name: "Tomato Purée"
           qty: "2 tbsp"
         - name: Mashed potato, to serve
 ---
 
 1. In a large pan, on a gentle heat, melt the butter with the olive oil, then add the sliced onion.
 Gently fry for 15 minutes until nicely caramelised. Add the chopped garlic for the last 5 minutes.
+
 2. Prepare the chicken thighs by shaking them around in a bowl with the flour and plenty of seasoning.
 Then whilst the onions are cooking, in a large frying pan, fry the chicken thighs on a medium heat for about 10 minutes until browned on both sides.
-3. Once the chicken has browned, tip the chicken into the large pan with the onions and garlic. Add the tomato puree then gently pour in the apple juice.
+
+3. Once the chicken has browned, tip the chicken into the large pan with the onions and garlic. Add the tomato purée then gently pour in the apple juice.
 Turn up the heat on to get the sauce to a boil, then simmer with the lid on for 20-25 mins.
 The sauce should reduce to a nice thickness, if still a bit thin, take the lid off and turn up the heat for another 5 minutes.
 Add plenty of seasoning, then serve with mash potatoes and veg, if you like.

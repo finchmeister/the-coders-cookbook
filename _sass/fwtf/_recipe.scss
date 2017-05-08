@@ -1,27 +1,9 @@
-$margin-top-bottom: 2rem;
-
 .method {
   ol {
     padding-left: 1em;
   }
 }
 
-.recipe-header {
-  padding: $margin-top-bottom*2 0 $margin-top-bottom*2 0;
-}
-
-.middle-bar {
-  padding: $margin-top-bottom 0 $margin-top-bottom 0;
-}
-
-.recipe-main {
-  padding: $margin-top-bottom 0 $margin-top-bottom 0;
-}
-
-.comments {
-  padding: $margin-top-bottom 0 $margin-top-bottom 0;
-}
-
-.author {
-  margin: 10px 0 10px 0;
+.ingredients {
+  font-size: $font-size-base/1.25;
 }

@@ -32,5 +32,15 @@ ingredients:
           qty: "300-400g"
 ---
 
-1. Heat the olive oil in a large frying pan on a medium heat and sizzle the bacon for about 5 mins until it starts to crisp. Max out the heat and add the grated courgette to the pan, don't worry about draining the courgette as the high heat will take care of excess water. Add the crushed garlic and cook for 7 - 10 minutes until reduced and starting to brown.
-2. Cook the tagliatelle for approximately 10 minutes, keep a mugs worth of cooking water, we'll use this to loosen the sauce. Once the tagliatelle is cooked to your liking, drain it and pour the pasta into the main frying pan. Over a low heat, toss everything together with the creme fraiche and plently of parmesean. Gently pour say a 1/3 of a mugs worth of cooking water into the mix. Stir until you have a preferred consistency. Add lots of seasoning then serve with more parmesan.
+1. Heat the olive oil in a large frying pan on a medium heat and sizzle the bacon for about 5 mins until it starts to crisp. 
+Max out the heat and add the grated courgette to the pan, 
+don't worry about draining the courgette as the high heat will take care of excess water. 
+Add the crushed garlic and cook for 7 - 10 minutes until reduced and starting to brown.
+
+2. Cook the tagliatelle for approximately 10 minutes, keep a mugs worth of cooking water, 
+we'll use this to loosen the sauce. Once the tagliatelle is cooked to your liking, 
+drain it and pour the pasta into the main frying pan. Over a low heat, 
+toss everything together with the creme fraiche and plently of parmesean. 
+Gently pour say a 1/3 of a mugs worth of cooking water into the mix. 
+Stir until you have a preferred consistency. 
+Add lots of seasoning then serve with more parmesan.
