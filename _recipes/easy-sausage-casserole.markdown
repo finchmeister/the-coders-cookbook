@@ -41,13 +41,13 @@ ingredients:
         - name: Mashed potato or garlic bread, to serve
 ---
 
-1. Either in 2 smaller roasting dishes or 1 large one, evenly
-spread out the sausages, red onions, pepper, garlic cloves and halved chilli. 
-Drizzle with olive oil and roast for at least 20 minutes on 200C,
+1. In 2 medium roasting dishes, evenly spread out the sausages, 
+red onions, pepper, garlic cloves and halved chilli. 
+Drizzle with olive oil and roast for at least 20 minutes on 200C 
 until the sausages are nicely browned and sticky. Turn throughout to ensure an even cook.
 
 2. Bring out the roasting dishes, then evenly tip in the chopped tomatoes and vegetable stock.
 Add a dash of brown sugar, dried basil and a healthy amount of seasoning. 
 Reduce the heat a bit then roast for another 20 mins. 
 The casserole should have reduced down at this point.
-Serve with mashed potato or garlic bread.
+Serve with mashed potato or garlic bread. Save the rest for lunch and future dinners.
