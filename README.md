@@ -24,6 +24,8 @@
 | BBB | Todo | Special |
 
 ## Dev
+https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
+
 
 First time opening the project, install Ruby gems:
 ```bash
@@ -32,6 +34,7 @@ bundle install
 ```
 To build the application:
 ```bash
+yarn install
 bundle exec jekyll serve
 ```
 Now available at http://localhost:4000

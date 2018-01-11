@@ -7,7 +7,7 @@ comments: true
 time: "50 mins"
 portions: "4"
 rough_cost: "£5"
-image_location: /assets/food-images/easy-sausage-casserole.jpeg
+image_location: ~
 description: "Minimal prep time. Easy and effective"
 spotify_uri: spotify:album:7fxmKgApcmXOVOlXuNEsQL
 spotify_comment: A short and sweet ep for this one. 
