@@ -1,20 +1,20 @@
 ---
 layout: recipe
-title:  "Blue Cheese Macaroni"
+title:  "Left over bolognese mix faijtas"
 subtitle: ""
-date:   2017-07-23 12:00:00 +0000
+date:   2018-01-11 13:00:00 +0000
 comments: true
 time: "50 mins"
 portions: "4"
 rough_cost: "£5"
-image_location: /assets/food-images/easy-sausage-casserole.jpeg
-description: "Minimal prep time. Easy and effective"
-spotify_uri: spotify:album:7fxmKgApcmXOVOlXuNEsQL
-spotify_comment: A short and sweet ep for this one. 
+image_location: /assets/food-images/bolognese-fajitas.jpg
+description: "Part 2"
+spotify_uri: 
+spotify_comment: 
 source:
 author: thefinchmeister
 
-tags: sausage easy
+tags: 
 
 
 ingredients:
