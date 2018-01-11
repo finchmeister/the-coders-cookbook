@@ -1,73 +1,7 @@
+$custom-font-size: 20px;
 
-// Colours
-$mabel: rgb(229, 245, 255);
-$aquamarine: rgb(129, 255, 197);
-$royal-blue: rgb(83, 54, 232);
-$creme-brulee: rgb(255, 233, 165);
-$jaffa: rgb(243, 150, 73);
-$violet-red: #f13795;
-$rope: #8c501f;
+$font-family-base: 'Inconsolata', monospace;
 
-$grey-faint: rgba(195, 195, 195, 0.51);
-
-// Bright colours
-$sunglow: #53b4ca;
-$purple-heart: #7b45b7;
-$carribean-green: #00dca1;
-$pomegranate: crimson;
-$royal-blue: #3779f1;
-$teal: teal;
-$selective-yellow: #FFB302;
-$island-spice: #fffaed;
-
-$brand-primary: $selective-yellow;
-
-$brand-1: $sunglow;
-$brand-2: $purple-heart;
-$brand-3: $pomegranate;
-$brand-4: $sunglow;
-$brand-5: $royal-blue;
-$brand-6: $teal;
-
-$text-muted: $grey-faint !default;
-
-$body-bg: $sunglow;
-
-// Footer
-$footer-background: $royal-blue;
-$footer-height: 80px;
-$footer-link-colour: white;
-
-/*$container-max-widths: (
-        sm: 480px,
-        md: 560px,
-        lg: 680px,
-        xl: 1000px
-);*/
-
-// $body-color: #fff;
-
-$jumbotron-bg: $aquamarine;
-
-$jumbotron-padding: 8em;
-$jumbotron-bg-image: "https://images.unsplash.com/photo-1485962307416-993e145b0d0d?auto=format&fit=crop&w=1199&h=500&cs=tinysrgb&crop=";
-
-
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-$headings-font-family: 'Josefin Sans', sans-serif;
-$font-family-base: $headings-font-family;
-
-$lead-font-size: 1.75rem;
-$font-size-base: 1.25rem;
-
-
-$body-color: #464a4c;
-
-// TODO move to fonts file
-
-// Prototype
-$body-bg: $island-spice;
-
-
-
-@import "bootstrap/variables";
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";

@@ -27,6 +27,13 @@ github_username:  finchmeister
 google_analytics: UA-BOB-Y
 disqus_shortname: thefinchmeister
 
+sass:
+    load_paths:
+        - _sass
+        - node_modules
+
+exclude: []
+
 # Build settings
 markdown: kramdown
 #theme: jekyll-theme-cayman
