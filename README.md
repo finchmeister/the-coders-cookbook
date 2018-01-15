@@ -25,7 +25,7 @@
 
 ## Dev
 https://simpleit.rocks/how-to-add-bootstrap-4-to-jekyll-the-right-way/
-
+https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/
 
 First time opening the project, install Ruby gems:
 ```bash
