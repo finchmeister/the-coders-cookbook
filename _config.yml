@@ -46,3 +46,6 @@ exclude:
 collections:
   recipes:
     output: true
+    
+plugins:
+  - jekyll-sitemap
