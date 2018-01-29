@@ -17,13 +17,12 @@ title: The Coder's Cookbook
 short_title: The Coder's Cookbook
 email: thefinchmeister@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The Coder's Cookbook is the practical open sauce cookbook
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+#twitter_username: jekyllrb
 github_username:  finchmeister
+instagram:  thecoderscookbook
 google_analytics: UA-BOB-Y
 disqus_shortname: thefinchmeister
 
@@ -37,8 +36,7 @@ exclude: []
 # Build settings
 markdown: kramdown
 #theme: jekyll-theme-cayman
-gems:
-  - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -49,3 +47,5 @@ collections:
     
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed

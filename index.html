@@ -14,8 +14,8 @@ title: The Coder's Cookbook
             {% for recipe in recipes limit:15 %}
 
             <div class="img-slider">
-                <a href="{{ recipe.url | prepend: site.github.url }}">
-                    <img class="img-fluid" src="{{ recipe.image_location | prepend: site.github.url }}" alt="{{ recipe.title }}">
+                <a href="{{ recipe.url | relative_url }}">
+                    <img class="img-fluid" src="{{ recipe.image_location | relative_url }}" alt="{{ recipe.title }}">
                 </a>
                 <p class="">
                     <!--TODO hyperlink-->

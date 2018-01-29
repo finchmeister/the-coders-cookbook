@@ -32,7 +32,7 @@
                             <div class="col-4 text-center">
                                 {% assign author = site.data.chefs[page.author] %}
 
-                                <img src="{{ author.image }}" class="rounded-circle img-fluid">
+                                <img src="{{ author.image | relative_url }}" class="rounded-circle img-fluid">
                             </div>
                             <div class="col-8 col-md-6">
 
@@ -77,7 +77,7 @@
 
             </div>
             <div class="col-md-5">
-                <img class="img-fluid image-shadow" src="{{ page.image_location | prepend: site.github.url }}">
+                <img class="img-fluid image-shadow" src="{{ page.image_location | relative_url }}">
             </div>
 
         </div>
