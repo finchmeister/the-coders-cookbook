@@ -1,7 +1,7 @@
 ---
 layout: recipe
-title:  "Chicken, Butternut Squash and Pesto Lasagna"
-subtitle: "Pretty ddecent"
+title:  "Recipe name"
+subtitle: "Subtitle"
 date:   2017-02-21 21:57:38 +0000
 comments: true
 time: "45 mins"
@@ -11,6 +11,8 @@ image_location: http://placehold.it/350x350
 description: "Better than chicken nuggets and chips"
 playlist: https://open.spotify.com/user/jaybeattie92/playlist/0fl9tBdvQbObUre4IG8cXy
 source: "bbcgoodfood.com"
+author: thefinchmeister
+
 
 ingredients:
     - title: ""
