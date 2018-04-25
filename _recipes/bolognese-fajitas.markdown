@@ -2,7 +2,7 @@
 layout: recipe
 title:  "Left over bolognese mix faijtas"
 subtitle: ""
-date:   2018-01-11 13:00:00 +0000
+date: 2018-01-11 13:00:00 +0000
 comments: true
 time: "50 mins"
 portions: "4"
@@ -13,6 +13,7 @@ spotify_uri:
 spotify_comment: 
 source:
 author: thefinchmeister
+in_progress: true
 
 tags: 
 

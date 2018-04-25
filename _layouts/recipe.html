@@ -10,6 +10,8 @@
     <div class="container py-4 py-md-5">
         <div class="row">
 
+
+
             <div class="col-md-7">
                 <h1>{{ page.title }}
                 </h1>
@@ -77,12 +79,23 @@
 
             </div>
             <div class="col-md-5">
+
                 <img class="img-fluid image-shadow" src="{{ page.image_location | relative_url }}">
             </div>
 
         </div>
     </div>
 
+
+    {% if page.in_progress %}
+
+    <div class="container py-5">
+        <div class="row">
+            <p class="lead">Recipe coming soon...</p>
+        </div>
+    </div>
+
+    {% else %}
     <div class="gradient-bar-1 py-5">
         <div class="container">
             <div class="row h4 mb-0">
@@ -103,67 +116,69 @@
 
     </div>
 
+    <div class="container py-5">
+        <div class="row">
 
+            <div class="col-xl-3 col-md-4">
+                <h2>Ingredients</h2>
+                {% for item in page.ingredients %}
+                {% if item.title %}
+                <h3>{{ item.title }}</h3>
+                {% endif %}
+                <ul class="list-unstyled">
+                    {% for ingredient in item.ingredients %}
 
-        <div class="container py-5">
-            <div class="row">
-
-                <div class="col-xl-3 col-md-4">
-                    <h2>Ingredients</h2>
-                    {% for item in page.ingredients %}
-                    {% if item.title %}
-                    <h3>{{ item.title }}</h3>
-                    {% endif %}
-                    <ul class="list-unstyled">
-                        {% for ingredient in item.ingredients %}
-
-                        <li>{% if ingredient.qty %}{{ ingredient.qty }} {% endif %}{{ ingredient.name }}</li>
-
-                        {% endfor %}
-                    </ul>
+                    <li>{% if ingredient.qty %}{{ ingredient.qty }} {% endif %}{{ ingredient.name }}</li>
 
                     {% endfor %}
+                </ul>
 
-                    <hr class="hidden-md-up">
+                {% endfor %}
 
-                </div>
-
-
-
-                <div class="col-xl-6 col-md-8 method">
-                    <h2>Method</h2>
-                    {{ content }}
-
-                </div>
-
-                <div class="col-xl-3 spotify">
-                    <hr class="hidden-xl-up">
-                    {% if page.spotify_uri %}
-                    <h3>Recommended Listening</h3>
-                    {% if page.spotify_comment %}
-                    <p>{{ page.spotify_comment }}</p>
-                    {% endif %}
-
-                    <iframe src="https://embed.spotify.com/?uri={{ page.spotify_uri }}" width="100%" height="380" frameborder="0" allowtransparency="true"></iframe>
-                    {% endif %}
-                </div>
+                <hr class="hidden-md-up">
 
             </div>
 
-            <div class="row">
-                <div class="col-12 py-5">
-                    <hr>
-                </div>
+
+
+            <div class="col-xl-6 col-md-8 method">
+                <h2>Method</h2>
+                {{ content }}
+
             </div>
 
-            <div class="row">
-                <div class="col-md-8">
-                    <h2>Comments</h2>
-                    {% include disqus.html %}
-                </div>
+            <div class="col-xl-3 spotify">
+                <hr class="hidden-xl-up">
+                {% if page.spotify_uri %}
+                <h3>Recommended Listening</h3>
+                {% if page.spotify_comment %}
+                <p>{{ page.spotify_comment }}</p>
+                {% endif %}
+
+                <iframe src="https://embed.spotify.com/?uri={{ page.spotify_uri }}" width="100%" height="380" frameborder="0" allowtransparency="true"></iframe>
+                {% endif %}
             </div>
 
         </div>
+
+        <div class="row">
+            <div class="col-12 py-5">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Comments</h2>
+                {% include disqus.html %}
+            </div>
+        </div>
+
+    </div>
+    {% endif %}
+
+
+
 
 
 </div>

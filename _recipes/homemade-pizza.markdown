@@ -13,6 +13,7 @@ spotify_uri: spotify:user:jaybeattie92:playlist:4CeMdHu1yU1w8932JmTPI4
 spotify_comment: "Listen to smooth jazz"
 source: bbcgoodfood.com
 author: thefinchmeister
+in_progress: true
 
 tags: 
 

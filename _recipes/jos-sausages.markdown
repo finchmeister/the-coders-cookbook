@@ -7,7 +7,7 @@ comments: true
 time: "1 hour"
 portions: "4"
 rough_cost: "£9"
-image_location: /assets/food-images/jossausages.jpg
+image_location: /assets/food-images/todo.png
 description: "Mary Berry, pfffft"
 playlist: https://open.spotify.com/user/jaybeattie92/playlist/0fl9tBdvQbObUre4IG8cXy
 author: thefinchmeister
