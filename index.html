@@ -17,11 +17,9 @@ title: The Coder's Cookbook
                 <a href="{{ recipe.url | relative_url }}">
                     <img class="img-fluid" src="{{ recipe.image_location | relative_url }}" alt="{{ recipe.title }}">
                 </a>
-                <p class="">
-                    <!--TODO hyperlink-->
-                    {{ recipe.title }}
-                    <small class="text-white-muted">by {{ recipe.author }}</small>
-                </p>
+
+                <p class="pb-3"><a href="{{ recipe.url | relative_url }}">{{ recipe.title }} <small class="text-white-muted">by {{ recipe.author }}</small></a></p>
+
             </div>
 
             {% endfor %}
