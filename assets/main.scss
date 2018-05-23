@@ -4,3 +4,15 @@
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 
+
+@include media-breakpoint-down(sm) {
+  .nav__header--title {
+    font-size: 1.75rem;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .nav__header--title {
+    font-size: 1.5rem;
+  }
+}
