@@ -13,7 +13,7 @@ spotify_uri:
 spotify_comment: ""
 source: bbcgoodfood.com
 author: thefinchmeister
-in_progress: true
+no_recipe: true
 
 tags: 
 

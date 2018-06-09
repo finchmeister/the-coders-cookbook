@@ -13,24 +13,11 @@ spotify_uri: spotify:user:jaybeattie92:playlist:4CeMdHu1yU1w8932JmTPI4
 spotify_comment: "Listen to smooth jazz"
 source: bbcgoodfood.com
 author: thefinchmeister
-in_progress: true
+no_recipe: true
+recipe_link: https://www.bbcgoodfood.com/recipes/4683/pizza-margherita-in-4-easy-steps
+recipe_link_name: BBC Good Food
 
 tags: 
 
-
-ingredients:
-    - title: ""
-      ingredients:
-        - name: "Spuds"
-          qty: "1kg"
-        - name: "Eggs (fresh, large and free range)"
-          qty: "2"
-        - name: "Avocado"
-          qty: "1"
-        - name: "Ciabata (or some form of nice bread) sliced"
-          qty: "1"
-        - name: "Lemon juice"
-        - name: "Chilli Flakes"
 ---
 
-TODO

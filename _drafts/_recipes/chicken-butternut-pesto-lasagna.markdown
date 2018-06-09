@@ -13,7 +13,7 @@ playlist: https://open.spotify.com/user/jaybeattie92/playlist/0fl9tBdvQbObUre4IG
 source: "bbcgoodfood.com"
 author: "thefinchmeister"
 tags: "chicken  "
-in_progress: true
+no_recipe: true
 
 ingredients:
     - title: ""

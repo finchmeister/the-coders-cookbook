@@ -24,7 +24,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  finchmeister
 github_repo:  https://github.com/finchmeister/the-coders-cookbook
 instagram:  thecoderscookbook
-google_analytics: UA-BOB-Y
+google_analytics: UA-120535847-1
 disqus_shortname: thefinchmeister
 
 sass:

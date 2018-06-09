@@ -87,12 +87,23 @@
     </div>
 
 
-    {% if page.in_progress %}
+    {% if page.no_recipe %}
 
     <div class="container py-5">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col">
+
+                {% if page.recipe_link %}
+
+                <h3>Go to Recipe:</h3>
+                <blockquote class="blockquote">
+                    <p class="mb-0"><a href="{{ page.recipe_link }}">{{ page.recipe_link }}</a></p>
+                    <footer class="blockquote-footer"><cite title="Source Title">{{ page.recipe_link_name }}</cite></footer>
+                </blockquote>
+
+                {% else %}
                 <p class="lead">Recipe coming soon...</p>
+                {% endif %}
             </div>
         </div>
     </div>
