@@ -7,7 +7,7 @@ comments: true
 time: "50 mins"
 portions: "4"
 rough_cost: "£5"
-image_location: /assets/food-images/bolognese-fajitas.jpg
+image: /assets/food-images/bolognese-fajitas.jpg
 description: "Part 2"
 spotify_uri: 
 spotify_comment: 

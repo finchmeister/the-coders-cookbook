@@ -20,19 +20,22 @@ description: > # this means to ignore newlines until "baseurl:"
   The Coder's Cookbook is the practical open sauce cookbook
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
 github_username:  finchmeister
 github_repo:  https://github.com/finchmeister/the-coders-cookbook
 instagram:  thecoderscookbook
 google_analytics: UA-120535847-1
 disqus_shortname: thefinchmeister
+lang: en_GB
+
+social:
+  links:
+    - https://www.instagram.com/thecoderscookbook
+    - https://github.com/finchmeister
 
 sass:
     load_paths:
         - _sass
         - node_modules
-
-exclude: []
 
 # Build settings
 markdown: kramdown
@@ -41,6 +44,7 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
 
 collections:
   recipes:

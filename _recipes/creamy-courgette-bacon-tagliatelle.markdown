@@ -7,7 +7,7 @@ comments: true
 time: "25 mins"
 portions: "4"
 rough_cost: "£6"
-image_location: /assets/food-images/creamy-courgette-bacon-tagliatelle.jpeg
+image: /assets/food-images/creamy-courgette-bacon-tagliatelle.jpeg
 description: "A smooth creamy pasta"
 spotify_uri: spotify:user:jaybeattie92:playlist:4CeMdHu1yU1w8932JmTPI4
 spotify_comment: "Listen to smooth jazz"

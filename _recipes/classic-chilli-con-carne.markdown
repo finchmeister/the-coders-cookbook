@@ -7,7 +7,7 @@ comments: true
 time: "1 hour"
 portions: "4"
 rough_cost: "£8"
-image_location: /assets/food-images/classic-chilli-con-carne.jpeg
+image: /assets/food-images/classic-chilli-con-carne.jpeg
 description: "The second highest rated recipe on BBC Good food - we've all had a go at this one."
 spotify_uri: spotify:album:6y4pGQRe2Nipa05NbGwsCq
 spotify_comment:

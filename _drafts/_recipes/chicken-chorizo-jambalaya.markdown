@@ -7,7 +7,7 @@ comments: true
 time: "45 mins"
 portions: "4"
 rough_cost: "£10"
-image_location: 
+image: 
 description: "Better than chicken nuggets and chips"
 playlist: https://open.spotify.com/user/jaybeattie92/playlist/0fl9tBdvQbObUre4IG8cXy
 source: "bbcgoodfood.com"

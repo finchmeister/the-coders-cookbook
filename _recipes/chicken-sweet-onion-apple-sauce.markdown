@@ -7,7 +7,7 @@ comments: true
 time: "50 mins"
 portions: "3"
 rough_cost: "£7"
-image_location: /assets/food-images/chicken-sweet-onion-apple-sauce.jpeg
+image: /assets/food-images/chicken-sweet-onion-apple-sauce.jpeg
 description: ""
 spotify_uri: spotify:album:6y4pGQRe2Nipa05NbGwsCq
 spotify_comment:
